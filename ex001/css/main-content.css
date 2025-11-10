@@ -1,0 +1,63 @@
+/* MAIN HEADER */
+
+:root {
+  --mainColor: #16a34a;
+  --mutedText: #737373;
+}
+
+main {
+  width: min(90%, 1200px);
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.typewriter-container {
+  width: min(90%, 800px);
+}
+
+.cursor {
+  animation: blink 1s ease-in-out infinite;
+  font-weight: 200;
+}
+
+.animated-text {
+  color: var(--mainColor);
+  text-decoration: underline;
+}
+
+.h1-typewriter {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.typewriter-container p {
+  color: var(--mutedText);
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-top: 1rem;
+  }
+
+  .h1-typewriter {
+    font-size: 2rem;
+  }
+
+  .typewriter-container p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+}
