@@ -6,9 +6,10 @@
 }
 
 main {
+  position: relative;
   width: min(90%, 1200px);
   margin: auto;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .typewriter-container {
@@ -26,14 +27,43 @@ main {
 }
 
 .h1-typewriter {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 .typewriter-container p {
   color: var(--mutedText);
   font-size: 1rem;
-  margin-top: 2rem;
+  margin: 0.8rem 0;
+}
+
+.typewriter-container button {
+  all: unset;
+  background-color: var(--mainColor);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--mainColor);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.typewriter-container button:hover {
+  background-color: #fff;
+  color: var(--mainColor);
+}
+
+.grid-main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.img-main {
+  border-radius: 10px;
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
 }
 
 @keyframes blink {
@@ -47,17 +77,30 @@ main {
   }
 }
 
-@media (max-width: 700px) {
-  main {
-    padding-top: 1rem;
-  }
-
+@media (max-width: 550px) {
   .h1-typewriter {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-top: 2rem;
   }
 
   .typewriter-container p {
     margin-top: 1rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .img-main {
+    display: none;
   }
 }
