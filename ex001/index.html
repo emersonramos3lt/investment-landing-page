@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evera</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.svg" alt="Logo" class="logo-img" />
+        <span>Evera</span>
+      </div>
+
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <nav class="nav-menu" id="main-navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" aria-label="Voltar a página inicial do site">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="Sobre a nossa missão e funcionários"
+              >Sobre</a
+            >
+          </li>
+          <li
+            class="nav-item"
+            aria-label="Acesse para ver nossos projetos. Abre em uma nova aba."
+          >
+            <a href="#">Projetos</a>
+          </li>
+          <li class="nav-item"><a href="#">ESG</a></li>
+
+          <li class="nav-item">
+            <div class="social">
+              <a
+                href="#"
+                target="_blank"
+                aria-label="Olhar o nosso Instagram. Abre em uma nova aba"
+                ><i class="ph ph-instagram-logo"></i
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                aria-label="Nosso Facebook. Abre em uma nova aba"
+                ><i class="ph ph-facebook-logo"></i
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                aria-label="Acessar nosso LinkedIn. Abre em uma nova aba"
+                ><i class="ph ph-linkedin-logo"></i
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="grid-main-container">
+          <div class="typewriter-container">
+            <h1 class="h1-typewriter">
+              <span class="static-text">Não Movemos Capital, Movemos </span
+              ><br />
+              <span class="animated-text">.</span><span class="cursor">|</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+              nesciunt, autem natus similique quo, nulla doloremque minus quae
+              est reprehenderit, quia illo sequi eligendi possimus.
+            </p>
+
+            <button>Mais informações</button>
+          </div>
+
+          <img src="./image/img-header.jpg" alt="Image" class="img-main" />
+        </div>
+      </section>
+
+      <div class="bg-div">
+        <section class="section-objective">
+          <h1>
+            Empoderamos novas gerações: prosperidade financeira com
+            <span class="highlight">legado sustentável.</span>
+          </h1>
+          <p>- Elias Valente, CEO & Fundador</p>
+
+          <div class="grid-section">
+            <img src="./image/img-objective-1.jpg" alt="Image 1" />
+            <img src="./image/img-objective-2.jpg" alt="Image 2" />
+          </div>
+        </section>
+      </div>
+
+      <div class="impact-images">
+        <div class="container">
+          <h2 data-aos="fade-up">Impacto que já geramos</h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Projetos reais que transformam o planeta e geram retorno financeiro
+            sólido
+          </p>
+
+          <div class="image-grid" data-aos="fade-up" data-aos-delay="200">
+            <div class="item item-1">
+              <div class="content">
+                <span class="label">Impacto ambiental</span>
+                <div class="number">127.000+</div>
+                <p>toneladas de CO₂ evitadas desde 2019</p>
+              </div>
+            </div>
+
+            <div class="item item-2">
+              <div class="content">
+                <span class="label">Impacto social</span>
+                <div class="number">8.400+</div>
+                <p>famílias com acesso à água potável</p>
+              </div>
+            </div>
+
+            <div class="item item-3">
+              <div class="content">
+                <span class="label">Escala técnica</span>
+                <div class="number">64 <small>MW</small></div>
+                <p>de energia limpa gerada</p>
+              </div>
+            </div>
+
+            <div class="item item-4">
+              <div class="content">
+                <span class="label">Para investidores</span>
+                <div class="number">12,8%</div>
+                <p>retorno médio anual</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="./js/typewriter.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
