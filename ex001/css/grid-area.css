@@ -30,7 +30,7 @@
 
 .item {
   position: relative;
-  border-radius: 10px;
+  border-radius: var(--rounded-xl);
   overflow: hidden;
   background: #000;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -150,9 +150,17 @@
     padding: 32px;
   }
   .number {
-    font-size: 3.8rem;
+    font-size: 2rem;
   }
   .impact-images {
     padding: 80px 20px;
+  }
+
+  .impact-images h2 {
+    font-size: 2rem;
+  }
+
+  .impact-images > .container > p {
+    font-size: 1rem;
   }
 }

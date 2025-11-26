@@ -13,6 +13,8 @@
 
   --transitionTime: 0.5s;
   --titleWeight: 700;
+
+  --rounded-xl: 12px;
 }
 
 * {
