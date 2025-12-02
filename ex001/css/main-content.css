@@ -104,6 +104,97 @@ section {
   border-radius: var(--rounded-xl);
 }
 
+/* TESTIMONY */
+.testimony__container {
+  width: min(92%, 1440px);
+  margin: 0 auto;
+  display: grid;
+  padding: 8rem 1.2rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.testimony__photo {
+  text-align: center;
+}
+
+.testimony__img {
+  width: 380px;
+  height: 380px;
+  border-radius: var(--rounded-xl);
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.testimony__img:hover {
+  transform: scale(1.05);
+}
+
+.testimony__author {
+  margin-top: 24px;
+}
+
+.testimony__name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.testimony__role {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Conteúdo do depoimento */
+.testimony__content {
+  position: relative;
+  padding-left: 40px;
+}
+
+.testimony__content::before {
+  content: "“";
+  position: absolute;
+  left: -10px;
+  top: -30px;
+  font-size: 12rem;
+  font-family: Georgia, serif;
+  color: #54bf44;
+  opacity: 0.15;
+  line-height: 1;
+}
+
+.testimony__quote {
+  font-size: 1.45rem;
+  line-height: 1.75;
+  color: #222;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.testimony__quote strong {
+  color: #54bf44;
+  font-weight: 800;
+}
+
+.testimony__caption {
+  margin-top: 32px;
+  font-size: 1.1rem;
+  color: #54bf44;
+  font-weight: 600;
+}
+
+.testimony__highlight {
+  color: #222;
+  font-weight: 700;
+}
+
 @keyframes blink {
   0%,
   100% {
@@ -131,6 +222,29 @@ section {
   .grid-section img {
     height: 180px;
   }
+
+  .testimony__container {
+    grid-template-columns: 1fr;
+    padding: 5rem 0.8rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .testimony__img {
+    border-radius: 50%;
+    width: 100%;
+    border: 8px solid #fff;
+  }
+
+  .testimony__content {
+    padding-left: 0;
+  }
+
+  .testimony__content::before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -140,6 +254,20 @@ section {
 
   .typewriter-container p {
     font-size: 0.9rem;
+  }
+
+  .testimony {
+    padding: 100px 20px;
+  }
+
+  .testimony__quote {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .testimony__img {
+    width: 200px;
+    height: 200px;
   }
 }
 

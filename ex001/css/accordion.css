@@ -1,0 +1,145 @@
+:root {
+  --bgAccordion: #fff;
+  --textColor: #111;
+  --transitionTime: 0.2s;
+}
+
+.faq {
+  padding: 140px 20px;
+  background: #ffffff;
+}
+
+.faq__container {
+  width: min(92%, 1440px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.faq__intro h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--textColor);
+}
+
+.faq__intro > p {
+  font-size: 1.25rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.faq__contact a {
+  color: var(--mainColor);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq__contact a:hover {
+  text-decoration: underline;
+}
+
+/* Accordion */
+.accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion__item {
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s ease;
+}
+
+.accordion__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.accordion__label::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2354bf44' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  transition: transform 0.3s ease;
+}
+
+.accordion__input:checked + .accordion__label::after {
+  transform: rotate(180deg);
+}
+
+.accordion__input:checked + .accordion__label {
+  color: var(--mainColor);
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 28px;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  max-height: 300px;
+  padding: 0 28px 32px;
+}
+
+.accordion__content p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .faq__container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .faq__intro {
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .faq {
+    padding: 50px 16px;
+  }
+  .faq__intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .faq__intro > p {
+    margin-bottom: 25px;
+  }
+
+  .accordion {
+    margin-top: -40px;
+  }
+
+  .accordion__label {
+    font-size: 1.15rem;
+    padding: 20px;
+  }
+}
