@@ -206,6 +206,65 @@ section {
   }
 }
 
+/* SECTION BG IMAGE */
+.container-bg-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("../image/parallax-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: min(95%, 1580px);
+  margin: auto;
+  color: #fff;
+  border-radius: var(--rounded-xl);
+  padding: 2rem;
+  margin: 3rem auto;
+}
+
+.container-text {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-text h2 {
+  font-size: 3rem;
+  font-weight: var(--titleWeight);
+}
+
+.container-text p {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.cta-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-group .btn-primary,
+.btn-secondary {
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--rounded-xl);
+  transition: opacity var(--transitionTime);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-group .btn-primary {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+.cta-group .btn-secondary {
+  background-color: #fff;
+  color: #111;
+}
+
+.container-text button:hover {
+  opacity: 0.9;
+}
+
 @media (max-width: 550px) {
   .h1-typewriter {
     font-size: 2rem;
@@ -217,6 +276,18 @@ section {
 
   .section-objective h1 {
     font-size: 2rem;
+  }
+
+  .container-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-group {
+    flex-direction: column;
+  }
+
+  .container-bg-image {
+    background-attachment: scroll;
   }
 
   .grid-section img {
