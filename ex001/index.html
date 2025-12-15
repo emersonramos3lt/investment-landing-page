@@ -364,9 +364,77 @@
       </section>
     </main>
 
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__grid">
+          <!-- Coluna 1: Evera -->
+          <div class="footer__column">
+            <h3 class="footer__title">Evera</h3>
+            <ul class="footer__list">
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#missao">Missão e valores</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#parceiros">Parceiros</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 2: Investidores -->
+          <div class="footer__column">
+            <h3 class="footer__title">Para investidores</h3>
+            <ul class="footer__list">
+              <li><a href="#projetos">Projetos atuais</a></li>
+              <li><a href="#como-investir">Como investir</a></li>
+              <li><a href="#faq">Perguntas frequentes</a></li>
+              <li><a href="#relatorios">Relatórios de impacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Recursos -->
+          <div class="footer__column">
+            <h3 class="footer__title">Recursos</h3>
+            <ul class="footer__list">
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#imprensa">Imprensa</a></li>
+              <li><a href="#termos">Termos de uso</a></li>
+              <li><a href="#privacidade">Política de privacidade</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 4: Contato -->
+          <div class="footer__column">
+            <h3 class="footer__title">Contato</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="mailto:invest@evera.com.br">invest@evera.com.br</a>
+              </li>
+              <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+              <li>
+                <a href="#linkedin" target="_blank" rel="noopener">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#instagram" target="_blank" rel="noopener"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          Todos os direitos reservados &copy; <span id="year"></span> Evera
+          Investimentos de Impacto
+        </p>
+      </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
     <script src="./js/typewriter.js"></script>
     <script src="./js/menu.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
