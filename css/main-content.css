@@ -151,7 +151,6 @@ section {
   line-height: 1.5;
 }
 
-/* Conteúdo do depoimento */
 .testimony__content {
   position: relative;
   padding-left: 40px;
@@ -249,6 +248,7 @@ section {
   transition: opacity var(--transitionTime);
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 
 .cta-group .btn-primary {
@@ -304,7 +304,6 @@ section {
   .testimony__img {
     border-radius: 50%;
     width: 100%;
-    border: 8px solid #fff;
   }
 
   .testimony__content {
