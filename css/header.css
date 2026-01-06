@@ -2,7 +2,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: -2rem 2rem;
+  padding: 1rem 2rem;
+  padding-bottom: -8rem;
   position: relative;
 }
 
