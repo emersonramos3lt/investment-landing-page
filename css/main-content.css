@@ -2,7 +2,7 @@
 
 main {
   position: relative;
-  padding-top: 1.2rem;
+  padding-top: -4rem;
 }
 
 section {
@@ -355,6 +355,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 
 
