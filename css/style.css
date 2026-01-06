@@ -6,8 +6,8 @@
 
 :root {
   --bgDefault: #fff;
-  --bgSection: #f3efe0;
-  --mainColor: #16a34a;
+  --bgSection: #F4F7F2;
+  --mainColor: #315C2B;
 
   --mutedText: #737373;
   --secondColor: #166534;
@@ -37,3 +37,4 @@ body.no-scroll {
 body {
   background-color: var(--bgBody);
 }
+
