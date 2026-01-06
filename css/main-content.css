@@ -8,7 +8,7 @@ main {
 section {
   width: min(92%, 1440px);
   margin: auto;
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .bg-div {
@@ -355,6 +355,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 
 
