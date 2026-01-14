@@ -351,10 +351,16 @@ section {
     display: none;
   }
 
+  main {
+  position: relative;
+  padding-top: -8rem;
+}
+
   .grid-section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 
 
