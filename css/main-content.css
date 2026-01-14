@@ -353,13 +353,14 @@ section {
 
   main {
   position: relative;
-  padding-top: -8rem;
+  padding-top: -20rem;
 }
 
   .grid-section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 
 
