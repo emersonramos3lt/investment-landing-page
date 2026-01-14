@@ -2,7 +2,7 @@
 
 main {
   position: relative;
-  margin-top: -5rem;
+  margin-top: 5rem;
 }
 
 section {
@@ -352,13 +352,14 @@ section {
   }
 
   main {
-  margin-top: -8rem;
+  margin-top: 2rem;
 }
 
   .grid-section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 
 
