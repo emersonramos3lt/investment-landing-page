@@ -4,9 +4,8 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   position: relative;
-  background-color: #fff; 
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -39,7 +38,9 @@ header {
   margin-bottom: 5px;
   border-radius: 100px;
   background-color: #000;
-  transition: transform var(--transitionTime), opacity var(--transitionTime);
+  transition:
+    transform var(--transitionTime),
+    opacity var(--transitionTime);
 }
 
 .line:last-child {
@@ -186,11 +187,3 @@ header {
     gap: 0.2rem;
   }
 }
-
-
-
-
-
-
-
-
