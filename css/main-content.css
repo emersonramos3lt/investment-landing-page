@@ -3,14 +3,13 @@
 main {
   position: relative;
   /* Alterado de 5rem para 0. O header é relativo, então o main já fica embaixo dele. */
-  margin-top: 0; 
 }
 
 section {
   width: min(92%, 1440px);
   margin: auto;
   /* Reduzi levemente de 6rem para 4rem para aproximar o conteúdo do topo */
-  padding: 4rem 0; 
+  padding: 4rem 0;
 }
 
 .bg-div {
@@ -272,6 +271,11 @@ section {
     font-size: 2rem;
   }
 
+  section {
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+  }
+
   .section-objective {
     padding-top: 5rem;
   }
@@ -354,22 +358,10 @@ section {
   }
 
   main {
-  margin-top: 1rem;
-}
+    margin-top: 1rem;
+  }
 
   .grid-section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
