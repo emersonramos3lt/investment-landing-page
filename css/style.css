@@ -7,11 +7,12 @@
 :root {
   --bgDefault: #111;
   --bgSection: #222;
-  --mainColor: #315C2B;
+  --mainColor: #85D581;
 
   --mutedText: #737373;
   --secondColor: #166534;
-  --neutralColor: #a3a3a3;
+  --neutralColor: #EBE6E5;
+  --fontColor: #F9F7F7;
 
   --transitionTime: 0.5s;
   --titleWeight: 700;
@@ -35,8 +36,9 @@ body.no-scroll {
 }
 
 body {
-  background-color: var(--bgBody);
-  color: #f2f2f2;
+  background-color: var(--bgDefault);
+  color: var(--fontColor);
 }
+
 
 
