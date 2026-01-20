@@ -37,7 +37,7 @@ header {
   height: 3px;
   margin-bottom: 5px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: var(--fontColor);
   transition:
     transform var(--transitionTime),
     opacity var(--transitionTime);
@@ -62,7 +62,7 @@ header {
 
 .menu-toggle[aria-expanded="true"] .line:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
-  background-color: #fff;
+  background-color: var(--fontColor);
 }
 
 .nav-menu {
@@ -187,3 +187,4 @@ header {
     gap: 0.2rem;
   }
 }
+
